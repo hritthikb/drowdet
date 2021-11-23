@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- CSS Link -->
+
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <!-- Flaticon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>Drowsiness Detection</title>
+
+  <style>
+    .heading{
+    margin-left: 450px;
+    }
+    .text2{
+        margin-top: 10px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .text1{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .text3{
+        margin-left: 40px;
+        color: red;
+        margin-top: 10px;
+    }
+    body{
+        background-color: bisque;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:red">
+        <img class="heading" src="https://i.postimg.cc/nz3DKPLw/face-recognition.png" alt="" width="40" height="40"> <b
+          class="text1">Drowsiness Detection App</b>
+      </a>
+    </div>
+  </nav>
+
+
+  <div class="row d-flex">
+    <div class="col-lg-3">
+      <img style="margin-left: 10px;"
+        src="https://media.istockphoto.com/vectors/dont-drive-tired-vector-illustration-vector-id927129108?k=20&m=927129108&s=612x612&w=0&h=G2PasgXmt2DUoVbFeF-1ZpiVVbkwOv8KoPY26VyxCSg="
+        height="300">
+      <span>
+        <p class="text3"><b>"Drowsiness is the one of
+            main reasons of Road Accidents"</b></p>
+      </span>
+    </div>
+
+    {% block content %} {% endblock %}
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

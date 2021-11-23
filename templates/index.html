@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class="col-lg-9">
+    <h4 class="text2" style="text-align: center;"><span>Camera <i class="fas fa-video"></i></i></span></h4>
+    <div style="justify-content: center; display: flex; margin-top: 30px;"><img src="{{ url_for('video') }}"></div>
+</div>
+
+{% endblock %}
